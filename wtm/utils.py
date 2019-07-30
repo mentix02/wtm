@@ -1,4 +1,5 @@
 import os
+import re
 import time
 import shutil
 import typing
@@ -36,6 +37,10 @@ def get_thumbnail(url: str) -> bool:
             return True
     else:
         return False
+
+
+def construct_query(song_name: str) -> str:
+    return '+'.join([word for word in re.split(r'\s', song_name) if len(word)])
 
 
 def get_new_file_name(old_listdir_set: typing.Set[str]) -> str:

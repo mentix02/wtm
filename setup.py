@@ -10,7 +10,7 @@ setup(
     name='wtm',
     license='MIT',
     author='manan',
-    version='1.0.0',
+    version='1.0.2',
     packages=['wtm'],
     scripts=['bin/wtm'],
     long_description=long_description,
