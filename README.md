@@ -10,6 +10,13 @@ Install globally using `pip`. You might have to use `sudo`.
 $ pip install wtm
 ```
 
+For MacOS users, you might need to install `ffmpeg` and `python-magic-bin` if you don't already have it -
+
+```bash
+$ brew install ffmpeg
+$ pip install python-magic-bin 
+```
+
 ## Usage
 
 ```shell
